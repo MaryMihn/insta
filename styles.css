@@ -1,0 +1,89 @@
+body {
+	background-color: rgb(250, 250, 250);
+	font-family: Arial, sans-serif;
+}
+
+.config {
+	display: flex;
+	justify-content: center;
+}
+
+.config > * {
+	margin-right: 10px;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	padding: 30px 20px;
+}
+
+header > * {
+	margin: 0 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+#avatar {
+	height: 150px;
+	width: 150px;
+	border-radius: 75px;
+	border: 1px solid grey;
+	margin-top: 25px;
+}
+
+.metrics {
+	vertical-align: baseline;
+	display: -webkit-box;
+	flex-direction: row;
+	padding: 10px 0;
+}
+
+.metrics > * {
+	font-size: 16px;
+	margin-right: 40px;
+	list-style: none;
+	font-weight: 400;
+}
+
+.metrics .number {
+	font-weight: 600;
+}
+
+#username {
+	font-weight: 100;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+#full_name {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 0;
+}
+
+#biography {
+	margin: 0;
+	line-height: 1.5;
+}
+
+#photos {
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20px 50px;
+	width: 100%;
+}
+
+.photo{
+	width: 293px;
+	height: 293px;
+	padding: 10px;
+}
+.hidden {
+	display: none;
+}
+
