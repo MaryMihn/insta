@@ -70,20 +70,19 @@ header > * {
 }
 
 #photos {
-	display: flex;
-	text-align: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 20px 50px;
-	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+	grid-gap: 2vw;
+	margin: 30px auto 0 auto;
+	max-width: 900px;
 }
 
-.photo{
-	width: 293px;
-	height: 293px;
-	padding: 10px;
+.photo {
+	max-width: 300px;
+	max-height: 300px;
 }
+
 .hidden {
 	display: none;
 }
-

@@ -31,15 +31,17 @@ function handler (response) {
 		hidden.classList.remove('hidden');
 	}
 
-	    const photos = response.graphql.user.edge_owner_to_timeline_media.edges;
-		let elements = '';
-		for (const photo of photos) {
-			const src = photo.node.thumbnail_src;
-			elements +=`<img class="photo" src="${src}">`
-		}
-		if (response.graphql.user.edge_owner_to_timeline_media.count > 0 && elements === "" ){
-            document.getElementById('photos').innerText = "Pablik is privat"
-        } else {
-            document.getElementById('photos').innerHTML = elements
-        }
+	const photos = user.edge_owner_to_timeline_media.edges;
+
+	let elements = '';
+	for (const photo of photos) {
+		const src = photo.node.thumbnail_src;
+		elements +=`<img class="photo" src="${src}">`
+	}
+
+	if (user.edge_owner_to_timeline_media.count > 0 && elements === '' ){
+		document.getElementById('photos').innerText = 'This Account is Private'
+	} else {
+		document.getElementById('photos').innerHTML = elements
+	}
 }
