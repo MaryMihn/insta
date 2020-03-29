@@ -6,11 +6,11 @@
   <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="config">
+<form class="config" id="search">
   <label for="user">Nickname:</label>
   <input id="user">
-  <button id="search">Search</button>
-</div>
+  <input type="submit" value="Search">
+</form>
 <header class="hidden">
   <img id="avatar">
   <div>
@@ -31,6 +31,7 @@
   </div>
 </header>
 <div id="photos"></div>
+<div id="text"></div>
 <script src="main.js"></script>
 </body>
 </html>

@@ -81,6 +81,35 @@ header > * {
 .photo {
 	max-width: 300px;
 	max-height: 300px;
+	position: relative;
+}
+
+.photo img {
+	max-width: 300px;
+	max-height: 300px;
+
+}
+
+.photo .meta {
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+.photo:hover .meta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#text{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .hidden {
